@@ -1,0 +1,1 @@
+export const baseUrl = "https://task5-backend-yfku.onrender.com";
