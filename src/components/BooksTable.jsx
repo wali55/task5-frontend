@@ -78,6 +78,10 @@ const BooksTable = ({ locale, seed, avgLikes, avgReviews }) => {
     }
   }, [handleScroll]);
 
+  useEffect(() => {
+    setBookDetails({});
+  }, [locale, seed]);
+
   const toggleBookExpansion = (bookId) => {
     if (expandedBook === bookId) {
       setExpandedBook(null);
